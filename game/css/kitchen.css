@@ -1,0 +1,43 @@
+/* Warung Rush — page chrome around the game canvas. The game itself is
+   drawn on the canvas; this file only centers it and styles the help line. */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #2b2118;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+#stage {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+#game {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  background: #fff8e7;
+}
+
+#game:focus {
+  outline: 3px solid #fab005;
+  outline-offset: 3px;
+}
+
+#help {
+  margin: 10px 4px 0;
+  color: #f1f3f5;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
